@@ -40,15 +40,29 @@ body {
   font-size: 50px;
   z-index: 200;
   animation: glow 1.5s infinite alternate;
-  display:block;
+  display: block;
   position: absolute;
 }
 
+/* Flowers remain in the center */
 .flowers {
   position: relative;
   transform-origin: center;
   transform: scale(0.9);
-  display:block;
+  display: block;
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 600px) {
+  .name {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .name {
+    font-size: 20px;
+  }
 }
 
 .night {
